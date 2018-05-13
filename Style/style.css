@@ -1,0 +1,34 @@
+.row {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+   .logo {
+        width: 25%;
+        height: 10%;
+    } 
+}
+
+@media (max-width: 599px) {
+   .logo {
+        width: 40%;
+        height: 10%;
+    }  
+}
+
+.nav-link {
+    color: white;
+}
+
+.tekstwolk {
+    margin-top: 3%; 
+    width: 100%;
+    height: 20%;
+    max-width: 400px;   
+}
+
+.verteller {
+    width: 100%;
+    height: 30%;
+    max-width: 200px;
+}
