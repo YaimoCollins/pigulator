@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "energy";
+$db = "pigulator";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
