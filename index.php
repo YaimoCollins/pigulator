@@ -1,5 +1,8 @@
-<?php require "database/dbconnect.php" ?>
+<?php require "database/dbconnect.php"; 
+session_start();
+if ($_SESSION['ingelogd'] == "ja"){
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +15,7 @@
 </head>
 
 <body style= "background-color:rgb(5, 36, 83);">
+   echo "<br> <a href='logout.php'>Uitloggen</a>";
     <div class="row justify-content-center">
         <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
     </div>
@@ -52,3 +56,9 @@
 </body>
 
 </html>
+<?php }
+
+else {
+	header("Location: inloggen.php");
+}
+?>
