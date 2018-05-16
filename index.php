@@ -37,6 +37,29 @@
         </li>
     </ul>
     
+    <?php 
+    $sql = "";
+    $result = mysqli_query($conn, $sql);
+
+    if(!$result) {
+        echo "query niet goed";
+    }
+
+    ?><div class="slideshow-container"><?php
+    
+    while ($array = mysqli_fetch_row($result)) {
+    ?>
+        <div class="mySlides fade">
+          <img src="img_nature_wide.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <?php } ?>
+    
+    </div>
+    
     <div class="row justify-content-center">
         <!-- inhoud van de tekstwolk uit database -->
         <img class="tekstwolk" src="img/tekstwolk_placeholder.png" alt="Deze placeholder werkt niet">
