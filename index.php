@@ -1,5 +1,8 @@
-<?php require "database/dbconnect.php" ?>
+<?php require "database/dbconnect.php"; 
+session_start();
+if ($_SESSION['ingelogd'] == "ja"){
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +15,7 @@
 </head>
 
 <body style= "background-color:rgb(5, 36, 83);">
+   echo "<br> <a href='logout.php'>Uitloggen</a>";
     <div class="row justify-content-center">
         <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
     </div>
@@ -37,29 +41,6 @@
         </li>
     </ul>
     
-    <?php 
-    $sql = "";
-    $result = mysqli_query($conn, $sql);
-
-    if(!$result) {
-        echo "query niet goed";
-    }
-
-    ?><div class="slideshow-container"><?php
-    
-    while ($array = mysqli_fetch_row($result)) {
-    ?>
-        <div class="mySlides fade">
-          <img src="img_nature_wide.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <?php } ?>
-    
-    </div>
-    
     <div class="row justify-content-center">
         <!-- inhoud van de tekstwolk uit database -->
         <img class="tekstwolk" src="img/tekstwolk_placeholder.png" alt="Deze placeholder werkt niet">
@@ -75,3 +56,9 @@
 </body>
 
 </html>
+<?php }
+
+else {
+	header("Location: inloggen.php");
+}
+?>
