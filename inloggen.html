@@ -2,26 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="">
+<meta name="description" content="loginscreen">
 <meta name="keywords" content="">
 <meta name="author" content="M.C. Vermeulen, Yaimo Collins">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <meta name="language" content="">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Style/style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <title>Inloggen</title>
 </head>
 
-<body>
+<body style= "background-color:rgb(5, 36, 83);">
+<div id="box_Form">
+  <form method="POST" action="inloggen.php">
+  	 <div class="d-flex justify-content-center">	
+		 <div class="row justify-content-center" id="loginScreen">
+			<div class="input-group">
+			  <div class="input-group-text"><i class="fas fa-user"></i></div>
+			  <input id="username" type="text" class="form-control" name="username" placeholder="Gebruikersnaam">
+			</div>
+			
+			<div class="input-group">
+				<div class="input-group-text"><i class="fas fa-key"></i></div>
+			  <input id="password" type="password" class="form-control" name="password" placeholder="Wachtwoord">
+			</div>
+			<input type="submit" name="submit">
+		</div>	
+	</div>
+  </form>
+</div>
 
-	<form method="POST" action="inloggen.php">
-		
-		<div class="row justify-content-center">
-			Gebruikersnaam: <input type="text" name="username"/> <br>
-			Wachtwoord: <input type="password" name="password"/> <br>
-			<input type="submit" name="submit" value="Login"/> <br>
-		</div>
-	</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
-
 </html>

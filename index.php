@@ -15,10 +15,47 @@ if ($_SESSION['ingelogd'] == "ja"){
 </head>
 
 <body style= "background-color:rgb(5, 36, 83);">
+<<<<<<< HEAD
+    <a href='logout.php'>Uitloggen</a>";
+    <div class="row justify-content-center">
+        <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
+    </div>
+    
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Presentatie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Rekenmachine</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Getallenreeks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pittige rekensommen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Rad van Fortuin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Shoot the pig</a>
+        </li>
+    </ul>
+    
+    <div class="row justify-content-center">
+        <!-- inhoud van de tekstwolk uit database -->
+        <img class="tekstwolk" src="img/tekstwolk_placeholder.png" alt="Deze placeholder werkt niet">
+    </div>
+    
+    <div class="row justify-content-center">
+        <img class="verteller" src="img/happygir.png" alt="Deze foto werkt niet">
+    </div>
+=======
     <div class="tyfus">
         <div class="row justify-content-center">
             <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
         </div>
+>>>>>>> 7c98b2c6e13f57df265fff636f101345cf4554af
 
             <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
