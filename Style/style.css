@@ -10,7 +10,14 @@
 .btn {
     margin: 5px;
 }
-
+.btn a {
+	text-decoration: none;
+	color: white;
+}
+.btn a:hover {
+	text-decoration: none;
+	color: white;
+}
 @media (min-width: 600px) {
    .logo {
         width: 25%;

@@ -43,7 +43,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <li class="nav-item">
                     <a class="nav-link" href="#">Shoot the pig</a>
                 </li>
-                <button class="btn btn-danger"><a class="button" href="logout.php">Uitloggen</a></button> 
+                <button class="btn btn-danger" type="button" href="logout.php"><a href="logout.php">Uitloggen</a>
             </ul>
         </div>
         <div class="row justify-content-center" id="bubble">
