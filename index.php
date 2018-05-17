@@ -49,7 +49,11 @@ if ($_SESSION['ingelogd'] == "ja"){
 
         <div class="row justify-content-center">
             <!-- inhoud van de tekstwolk uit database -->
-            <img class="tekstwolk" src="img/tekstwolk_placeholder.png" alt="Deze placeholder werkt niet">
+            <div class="tekstwolk">
+                <p>Hallo! Ik ben gir! <br>
+                Ik ben uw hulpje op deze rekenwebsite.<br> 
+                Ik geef u informatie over hoe deze website werkt. Daarnaast kan ik ook heel goed rekenen!</p>
+            </div> 
         </div>
 
         <div class="row justify-content-center">

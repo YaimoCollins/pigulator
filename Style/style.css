@@ -22,9 +22,15 @@
 
 .tekstwolk {
     margin-top: 3%; 
-    width: 100%;
-    height: 20%;
-    max-width: 400px;   
+    background-image: url(../img/tekstwolk_placeholder.png);
+    width: 450px;
+    height: 191px;
+    padding: 20px;
+    padding-bottom: 55px;
+}
+
+.tekstwolk h1 {
+    text-align: center;
 }
 
 .verteller {
