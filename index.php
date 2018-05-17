@@ -10,18 +10,20 @@ if ($_SESSION['ingelogd'] == "ja"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <title></title>
 </head>
 
-<body style= "background-color:rgb(5, 36, 83);">
+<body style="background-color: rgb(237, 255, 244)">
     <div class="tyfus">
+        <div class="wrapper">
         <div class="row justify-content-center">
-            <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
+            <img class="logo" src="img/logo.png" alt="Deze foto werkt niet" style="color:rgb(191, 255, 219)">
         </div>
-            <ul class="nav nav-tabs justify-content-center">
+            <ul id="navbar" class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#">Homepagina</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Presentatie</a>
@@ -41,18 +43,17 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <li class="nav-item">
                     <a class="nav-link" href="#">Shoot the pig</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href='logout.php'>Uitloggen</a>
-                </li>
+                <button class="btn btn-danger"><a class="button" href="logout.php">Uitloggen</a></button> 
             </ul>
-
-        <div class="row justify-content-center">
+        </div>
+        <div class="row justify-content-center" id="bubble">
             <!-- inhoud van de tekstwolk uit database -->
-            <div class="speech-bubble">
-                <p><strong>Hallo! Ik ben gir! <br>
+            <div class="speech-bubble-ds">
+                <p>Hallo! Ik ben gir! <br>
                 Ik ben uw hulpje op deze rekenwebsite.<br> 
-                Ik geef u informatie over hoe deze website werkt. Daarnaast kan ik ook heel goed rekenen!</strong></p>
-            </div> 
+                Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
+            <div class="speech-bubble-ds-arrow"></div>
+        </div>
         </div>
 
         <div class="row justify-content-center">
