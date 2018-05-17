@@ -1,4 +1,7 @@
-
+@font-face { 
+font-family: "digital";
+src: url(../fonts/digital-7.ttf);
+}
 .tyfus .row {
     width: 100%;
 }
@@ -21,18 +24,32 @@
     color: white;
 }
 
-.tekstwolk {
-    margin-top: 3%; 
-    background-image: url(../img/tekstwolk_placeholder.png);
-    width: 450px;
-    height: 191px;
-    padding: 20px;
-    padding-bottom: 55px;
+.speech-bubble {
+    margin-top: 5%;
+    margin-bottom: 2%;
+	position: relative;
+	background: white;
+	border-radius: .4em;
+    padding: 1em 1em 0.5em 1em;
+    font-family: "digital";
+    font-size: 25px;
 }
 
-.tekstwolk h1 {
-    text-align: center;
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -19px;
+	margin-bottom: -38px;
 }
+
 
 .verteller {
     width: 100%;
