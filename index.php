@@ -23,7 +23,7 @@ if ($_SESSION['ingelogd'] == "ja"){
         </div>
             <ul id="navbar" class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Homepagina</a>
+                    <a class="nav-link" id="importanto" href="#">Homepagina</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Presentatie</a>

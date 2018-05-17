@@ -18,6 +18,12 @@
 	text-decoration: none;
 	color: white;
 }
+#importanto {
+    background-color: rgb(237, 255, 244) !important;
+    color: rgb(5, 36, 83);
+}
+
+
 @media (min-width: 600px) {
    .logo {
         width: 25%;
