@@ -15,7 +15,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 </head>
 
 <body style= "background-color:rgb(5, 36, 83);">
-   echo "<br> <a href='logout.php'>Uitloggen</a>";
+    <a href='logout.php'>Uitloggen</a>";
     <div class="row justify-content-center">
         <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
     </div>
