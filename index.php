@@ -19,7 +19,6 @@ if ($_SESSION['ingelogd'] == "ja"){
         <div class="row justify-content-center">
             <img class="logo" src="img/logo.png" alt="Deze foto werkt niet">
         </div>
-
             <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
@@ -49,10 +48,10 @@ if ($_SESSION['ingelogd'] == "ja"){
 
         <div class="row justify-content-center">
             <!-- inhoud van de tekstwolk uit database -->
-            <div class="tekstwolk">
-                <p>Hallo! Ik ben gir! <br>
+            <div class="speech-bubble">
+                <p><strong>Hallo! Ik ben gir! <br>
                 Ik ben uw hulpje op deze rekenwebsite.<br> 
-                Ik geef u informatie over hoe deze website werkt. Daarnaast kan ik ook heel goed rekenen!</p>
+                Ik geef u informatie over hoe deze website werkt. Daarnaast kan ik ook heel goed rekenen!</strong></p>
             </div> 
         </div>
 
