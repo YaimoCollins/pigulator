@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-=======
+
 .tyfus .row {
     width: 100%;
 }
 
->>>>>>> 7c98b2c6e13f57df265fff636f101345cf4554af
 @media (min-width: 600px) {
    .logo {
         width: 25%;
@@ -41,7 +39,7 @@
     height: 30%;
     max-width: 200px;
 }
-<<<<<<< HEAD
+
 #loginScreen {
 	width: 15%;
 	background-color:#3659A0;
@@ -53,17 +51,3 @@
 .d-flex {
 	margin-top: 20%;
 }
-=======
-
-footer {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
->>>>>>> 7c98b2c6e13f57df265fff636f101345cf4554af
