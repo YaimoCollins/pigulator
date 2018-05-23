@@ -9,9 +9,9 @@ if ($_SESSION['ingelogd'] == "ja"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
     <title></title>
 </head>
 
@@ -21,39 +21,47 @@ if ($_SESSION['ingelogd'] == "ja"){
             <div class="row justify-content-center">
                 <img class="logo" src="img/logo.png" alt="Deze foto werkt niet" style="color:rgb(191, 255, 219)">
             </div>
-            <ul id="navbar" class="nav nav-tabs justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" id="importanto" href="#">Homepagina</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Presentatie</a>
-                </li >
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rekenmachine</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Getallenreeks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pittige rekensommen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rad van Fortuin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shoot the pig</a>
-                </li>
-                <button class="btn btn-danger" type="button" href="logout.php"><a href="logout.php">Uitloggen</a></button>
-            </ul>
+            <nav class="navbar navbar-expand-lg">
+                <button id="navknop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Presentatie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rekenmachine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Getallenreeks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pittige rekensommen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rad van fortuin</a>
+                        </li>
+                        <li class="nav-item" id="uitloggen">
+                            <a class="nav-link" href="#">Shoot the pig</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-danger" type="button" href="logout.php"><a href="logout.php">Uitloggen</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         <div class="row justify-content-center" id="bubble">
             <!-- inhoud van de tekstwolk uit database -->
             <div class="speech-bubble-ds">
-                <p>Hallo! Ik ben gir! <br>
-                Ik ben uw hulpje op deze rekenwebsite.<br> 
-                Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
-            <div class="speech-bubble-ds-arrow"></div>
-        </div>
+                <p>Hallo! Ik ben gir! <br> Ik ben uw hulpje op deze rekenwebsite.<br> Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
+                <div class="speech-bubble-ds-arrow"></div>
+            </div>
         </div>
 
         <div class="row justify-content-center">

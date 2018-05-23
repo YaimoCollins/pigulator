@@ -2,9 +2,21 @@
     width: 100%;
 }
 
+ul {
+    margin: 0 auto;
+}
+
+ul li {
+    padding: 0px 20px;
+}
+
 .wrapper {
     width: 100%;
     background-color: rgb(5, 36, 83);
+}
+
+.row {
+    margin: 0;
 }
 
 .btn {
@@ -21,6 +33,13 @@
 #importanto {
     background-color: rgb(237, 255, 244) !important;
     color: rgb(5, 36, 83);
+}
+.nav-link:hover{
+    color: rgb(237, 255, 244);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 
