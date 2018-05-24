@@ -4,6 +4,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -12,6 +13,7 @@ if ($_SESSION['ingelogd'] == "ja"){
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="js/rekenmachine.js"></script>
     <title>Pigulator</title>
 </head>
 
@@ -56,24 +58,36 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
-        <div class="row justify-content-center" id="bubble">
-            <!-- inhoud van de tekstwolk uit database -->
-            <div class="speech-bubble-ds">
-                <p>Hallo! Ik ben gir! <br> Ik ben uw hulpje op deze rekenwebsite.<br> Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
-                <div class="speech-bubble-ds-arrow"></div>
-            </div>
+        
+        <div class="rekenmachine">
+            <form name="textview">
+                <input class="textview">
+            </form>
+            <table>
+                <tr>
+                    <td><input type="button" value="C"></td>
+                    <td><input type="button" value="%"></td>
+                    <td><input type="button" value="/"></td>
+                    <td><input type="button" value="X"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7"></td>
+                    <td><input type="button" value="8"></td>
+                    <td><input type="button" value="9"></td>
+                    <td><input type="button" value="-"></td>
+                </tr>
+            </table>
         </div>
-
-        <div class="row justify-content-center">
-            <img class="verteller" src="img/happygir.png" alt="Deze foto werkt niet">
-        </div>
+        
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
 <?php }
 
 else {
