@@ -141,6 +141,7 @@ ul li {
     height: 50px;
     font-size: 1.5em;
     margin: 2px;
+    cursor: pointer;
 }
 
 .textview {
