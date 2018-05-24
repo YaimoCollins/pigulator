@@ -4,6 +4,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -56,24 +57,55 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
-        <div class="row justify-content-center" id="bubble">
-            <!-- inhoud van de tekstwolk uit database -->
-            <div class="speech-bubble-ds">
-                <p>Hallo! Ik ben gir! <br> Ik ben uw hulpje op deze rekenwebsite.<br> Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
-                <div class="speech-bubble-ds-arrow"></div>
-            </div>
-        </div>
-
         <div class="row justify-content-center">
-            <img class="verteller" src="img/happygir.png" alt="Deze foto werkt niet">
+            <form name="form">
+                <input class="textview" name="textview">
+            </form>
         </div>
+        <div class="row justify-content-center">
+            <table>
+                <tr>
+                    <td><input class="knop" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="knop" type="button" value="<" onclick="back()"></td>
+                    <td><input class="knop" type="button" value="/" onclick="insert('/')"></td>
+                    <td><input class="knop" type="button" value="x" onclick="insert('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="knop" type="button" value="7" onclick="insert(7)"></td>
+                    <td><input class="knop" type="button" value="8" onclick="insert(8)"></td>
+                    <td><input class="knop" type="button" value="9" onclick="insert(9)"></td>
+                    <td><input class="knop" type="button" value="%" onclick="insert('%')"></td>
+                </tr>
+                <tr>
+                    <td><input class="knop" type="button" value="4" onclick="insert(4)"></td>
+                    <td><input class="knop" type="button" value="5" onclick="insert(5)"></td>
+                    <td><input class="knop" type="button" value="6" onclick="insert(6)"></td>
+                    <td><input class="knop" type="button" value="-" onclick="insert('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="knop" type="button" value="1" onclick="insert(1)"></td>
+                    <td><input class="knop" type="button" value="2" onclick="insert(2)"></td>
+                    <td><input class="knop" type="button" value="3" onclick="insert(3)"></td>
+                    <td><input class="knop" type="button" value="+" onclick="insert('+')"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="knop" style="width: 106px" type="button" value="0" onclick="insert(0)"></td>
+                    <td><input class="knop" type="button" value="." onclick="insert('.')"></td>
+                    <td><input class="knop" type="button" value="=" onclick="gelijkAan()"></td>
+                </tr>
+            </table>
+        </div>
+        
     </div>
+    
+    <script type="text/javascript" src="js/rekenmachine.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
 <?php }
 
 else {
