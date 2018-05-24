@@ -13,29 +13,42 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Style/style.css">
 <title>Inloggen</title>
-</head>
 
-<body style= "background-color:rgb(5, 36, 83);">
-<div id="box_Form">
-  <form method="POST" action="inloggen.php">
-  	 <div class="d-flex justify-content-center">	
-		 <div class="row justify-content-center" id="loginScreen">
-			<div class="input-group">
-			  <div class="input-group-text"><i class="fas fa-user"></i></div>
-			  <input value="guus" id="username" type="text" class="form-control" name="username" placeholder="Gebruikersnaam">
-			</div>
-			
-			<div class="input-group">
-				<div class="input-group-text"><i class="fas fa-key"></i></div>
-			  <input value="geluk" id="password" type="password" class="form-control" name="password" placeholder="Wachtwoord">
-			</div>
-			<input type="submit" name="submit">
-		</div>	
-	</div>
-  </form>
-</div>
+<div class="container">
+  
+  <div class="row" id="pwd-container">
+    <div class="col-md-4"></div>
+    
+    <div class="col-md-4">
+      <section class="login-form">
+        <form method="POST" action="inloggen.php" role="login">
+          <img src="img/logo.png" width="80%" class="img-responsive" alt="" />
+          <input type="text" name="username" placeholder="Gebruikersnaam" required class="form-control input-lg" value="GAST" />
+          
+          <input type="password" name="password" class="form-control input-lg" id="password" placeholder="Password" value="Welkom#1" required="" />
+          
+          
+          <div class="pwstrength_viewport_progress"></div>
+          
+          
+          <button type="submit" name="submit" class="btn btn-lg btn-block"> Inloggen</button>
+          <div>
+            <a href="aanmelden.html">Aanmelden</a> 
+          </div>
+          
+        </form>
+        
+        <div class="form-links">
+          <a href="#">www.pigulator.nl</a>
+        </div>
+      </section>  
+      </div>
+      
+      <div class="col-md-4"></div>
+      
 
-
+  </div>
+  
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

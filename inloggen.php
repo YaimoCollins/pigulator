@@ -4,8 +4,8 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 	// Bezoeker komt van een form met de 'POST' methode.
-	$user = "guus";
-	$password = "geluk";
+	$user = "GAST";
+	$password = "Welkom#1";
 	$ingevoerdeuser = $_POST['username'];
 	$ingevoerdepassword = $_POST['password'];
 	
