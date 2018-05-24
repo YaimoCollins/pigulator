@@ -34,10 +34,10 @@ if ($_SESSION['ingelogd'] == "ja"){
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rekenmachine.php">Presentatie</a>
+                            <a class="nav-link" href="#">Presentatie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rekenmachine</a>
+                            <a class="nav-link" href="rekenmachine.php">Rekenmachine</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Getallenreeks</a>
@@ -58,23 +58,36 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
-        
-        <div class="rekenmachine">
+        <div class="row justify-content-center">
             <form name="textview">
                 <input class="textview">
             </form>
+        </div>
+        <div class="row justify-content-center">
             <table>
                 <tr>
-                    <td><input type="button" value="C"></td>
-                    <td><input type="button" value="%"></td>
-                    <td><input type="button" value="/"></td>
-                    <td><input type="button" value="X"></td>
+                    <td><input class="knop" type="button" value="C"></td>
+                    <td><input class="knop" type="button" value="%"></td>
+                    <td><input class="knop" type="button" value="/"></td>
+                    <td><input class="knop" type="button" value="x"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="7"></td>
-                    <td><input type="button" value="8"></td>
-                    <td><input type="button" value="9"></td>
-                    <td><input type="button" value="-"></td>
+                    <td><input class="knop" type="button" value="7"></td>
+                    <td><input class="knop" type="button" value="8"></td>
+                    <td><input class="knop" type="button" value="9"></td>
+                    <td><input class="knop" type="button" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input class="knop" type="button" value="4"></td>
+                    <td><input class="knop" type="button" value="5"></td>
+                    <td><input class="knop" type="button" value="6"></td>
+                    <td><input class="knop" type="button" value="+"></td>
+                </tr>
+                <tr>
+                    <td><input class="knop" type="button" value="1"></td>
+                    <td><input class="knop" type="button" value="2"></td>
+                    <td><input class="knop" type="button" value="3"></td>
+                    <td><input class="knop" type="button" value="="></td>
                 </tr>
             </table>
         </div>

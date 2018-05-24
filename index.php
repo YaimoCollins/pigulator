@@ -32,10 +32,10 @@ if ($_SESSION['ingelogd'] == "ja"){
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rekenmachine.php">Presentatie</a>
+                            <a class="nav-link" href="#">Presentatie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rekenmachine</a>
+                            <a class="nav-link" href="rekenmachine.php">Rekenmachine</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Getallenreeks</a>

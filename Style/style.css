@@ -131,3 +131,21 @@ ul li {
 .d-flex {
 	margin-top: 20%;
 }
+
+.rekenmachine {
+    margin: 0 auto;
+}
+
+.knop {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 2px;
+}
+
+.textview {
+    width: 217px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+}
