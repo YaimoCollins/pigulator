@@ -25,6 +25,7 @@ function berekenReeks() {
     var reeks = document.getElementById("reeks");
     var reeksInvoer = reeks.options[reeks.selectedIndex].text;
 	document.getElementById("bubble").style.display = "block";
+	document.getElementById("rekengir").src = "img/crazygir.png";
 
     if (reeksInvoer == "Breukenreeks") {
         berekenBreuk(getalInput);

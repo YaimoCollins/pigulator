@@ -12,7 +12,7 @@ function berekenFibo(){
 		huidigGetal = uitkomst;
 		document.getElementById("fibo_Output").innerHTML += uitkomst  + "<br>";
 		document.getElementById("bubble").style.display = "block";
-		document.getElementById("rekengir").innerHTML = "img/happygir.png"
+		document.getElementById("rekengir").src = "img/crazygir.png";
 	}
 	
 }
