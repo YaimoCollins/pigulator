@@ -82,7 +82,7 @@ if ($_SESSION['ingelogd'] == "ja"){
             <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-2">
-                    <img id="rekengir" src="img/crazygir.png" alt="Deze foto werkt niet">
+                    <img id="rekengir" src="img/happygir.png" alt="Deze foto werkt niet">
                 </div>
                 <div class="col-lg-2">
                     <div class="row justify-content-center" id="bubble">
