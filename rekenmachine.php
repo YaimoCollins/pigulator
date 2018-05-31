@@ -26,7 +26,6 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <button id="navknop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -62,7 +61,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <div class="col-lg-2">
                 </div>
                 <div class="col-lg-3">
-                    <input id="getalInput" type="text" class="form-control" placeholder="Welk getal wilt u berekenen?">
+                    <input id="getalInput" type="text" class="form-control" placeholder="Met welk getal wilt u rekenen?">
                 </div>
                 <div class="col-lg-2">
                     <select id="reeks" class="form-control form-control-lg">
@@ -74,7 +73,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                     </select>
                 </div>
                 <div class="col-lg-3">
-                    <input id="eindGetal" type="text" class="form-control" placeholder="Hoe lang moet de reeks worden?">
+                    <input id="eindGetal" type="text" class="form-control" placeholder="Hoe lang moet de reeks worden? (Alleen voor tafels!)">
                 </div>
                 <div class="col-lg-2">
                 </div>
@@ -89,14 +88,14 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <div class="col-lg-2">
                     <img id="rekengir" src="img/happygir.png" alt="Deze foto werkt niet">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <div class="row justify-content-center" id="bubble">
                         <!-- inhoud van de tekstwolk uit database -->
                         <div id="output" class="speech-bubble-ds">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                 </div>
             </div>
         </form>
