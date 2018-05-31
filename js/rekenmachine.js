@@ -24,6 +24,7 @@ function berekenReeks() {
     var eindGetal = parseFloat(document.getElementById("eindGetal").value);
     var reeks = document.getElementById("reeks");
     var reeksInvoer = reeks.options[reeks.selectedIndex].text;
+	document.getElementById("bubble").style.display = "block";
 
     if (reeksInvoer == "Breukenreeks") {
         berekenBreuk(getalInput);
