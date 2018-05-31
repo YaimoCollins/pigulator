@@ -28,7 +28,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -37,7 +37,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                         <li class="nav-item">
                             <a class="nav-link" href="rekenmachine.php">Rekenmachine</a>
                         </li>
-                        <li class="dropdown nav-item">
+                        <li class="dropdown nav-item  active">
        						 <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Getallenreeks
        							 </a>
        								 <ul class="dropdown-menu nav-item">
@@ -60,21 +60,47 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
-        <div class="row justify-content-center" id="bubble">
-            <!-- inhoud van de tekstwolk uit database -->
-            <div class="speech-bubble-ds">
-                <p>Hallo! Ik ben gir! <br> Ik ben uw hulpje op deze rekenwebsite.<br> Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>
-                <div class="speech-bubble-ds-arrow"></div>
+        
+<form>
+            <div id="input" class="row">
+                <div class="col-lg-4">
+                
+                </div>
+                
+                <div class="col-lg-4">
+                    <input id="getalInput_Fibo" type="text" class="form-control" placeholder="Tot welk getal wil je de rij van Fibonacci zien?">
+                </div>
+               
+                <div class="col-lg-4">
+                </div>
             </div>
-        </div>
+            <div class="row justify-content-center">
+                <form name="form">
+                    <button id="bereken" type="button" class="btn btn-primary" onclick="berekenFibo()">Bereken</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2">
+                    <img id="rekengir" src="img/crazygir.png" alt="Deze foto werkt niet">
+                </div>
+                <div class="col-lg-2">
+                    <div class="row justify-content-center" id="bubble">
+                        <!-- inhoud van de tekstwolk uit database -->
+                        <div id="fibo_Output" class="speech-bubble-ds">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+        </form>
+    
+<script type="text/javascript" src="js/fibonacci.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-        <div class="row justify-content-center">
-            <img class="verteller" src="img/happygir.png" alt="Deze foto werkt niet">
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>

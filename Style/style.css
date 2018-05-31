@@ -66,6 +66,7 @@ ul li {
 #bubble {
     margin-top: 5%;
     font-family: 'VT323', monospace;
+	display: none;
 }
 .speech-bubble-ds {
     background: white;
@@ -256,3 +257,14 @@ form button {
 #rekengir {
     width: 80%;
 }
+
+/* FibonacciReeks */
+
+.fibo_Gir {
+	
+}
+#getalInput_Fibo {
+	
+}
+
+/* Einde FibonacciReeks */
