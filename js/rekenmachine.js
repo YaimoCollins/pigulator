@@ -18,3 +18,63 @@ function back() {
     var getal = document.form.textview.value;
     document.form.textview.value = getal.substring(0,getal.length - 1);
 }
+
+function berekenReeks() {
+    var getalInput = parseFloat(document.getElementById("getalInput").value);
+    var eindGetal = parseFloat(document.getElementById("eindGetal").value);
+    var reeks = document.getElementById("reeks");
+    var reeksInvoer = reeks.options[reeks.selectedIndex].text;
+    
+    if(reeksInvoer == "Breukenreeks"){
+       berekenBreuk(getalInput);
+    }
+    
+    if(reeksInvoer == "Machtreeks"){
+       berekenMacht(getalInput);
+    }
+    
+    if(reeksInvoer == "Tafels"){
+       berekenTafel(getalInput, eindGetal);
+    }
+    
+    if(reeksInvoer == "Kwadratenreeks"){
+       berekenKwadraat(getalInput);
+    }
+}
+
+function berekenBreuk(input) {
+    var resultaat;
+    document.getElementById("output").innerHTML = ""; 
+    
+    for (var i = 1; i <= eind; i++) {
+        
+    }
+}
+
+function berekenMacht(input) {
+    var resultaat;
+    document.getElementById("output").innerHTML = ""; 
+    
+    for (var i = 1; i <= eind; i++) {
+        
+    }
+}
+
+function berekenTafel(input, eind) {
+    var resultaat;
+    document.getElementById("output").innerHTML = ""; 
+    
+    for (var i = 1; i <= eind; i++) {
+        resultaat = input * i;
+        document.getElementById("output").innerHTML += i + " x " + input + " = " + resultaat + "<br>";
+    }
+}
+
+function berekenKwadraat(input) {
+    var resultaat;
+    document.getElementById("output").innerHTML = ""; 
+    
+    for (var i = 1; i <= eind; i++) {
+        
+    }
+}

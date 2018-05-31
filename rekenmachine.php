@@ -57,6 +57,50 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
+        <form>
+            <div id="input" class="row">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-3">
+                    <input id="getalInput" type="text" class="form-control" placeholder="Welk getal wilt u berekenen?">
+                </div>
+                <div class="col-lg-2">
+                    <select id="reeks" class="form-control form-control-lg">
+                        <option>Wat voor een reeks?</option>
+                        <option id="breuk">Breukenreeks</option>
+                        <option id="macht">Machtreeks</option>
+                        <option id="tafel">Tafels</option>
+                        <option id="kwadraat">Kwadratenreeks</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <input id="eindGetal" type="text" class="form-control" placeholder="Hoe lang moet de reeks worden?">
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <form name="form">
+                    <button id="bereken" type="button" class="btn btn-primary" onclick="berekenReeks()">Bereken</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2">
+                    <img id="rekengir" src="img/happygir.png" alt="Deze foto werkt niet">
+                </div>
+                <div class="col-lg-2">
+                    <div class="row justify-content-center" id="bubble">
+                        <!-- inhoud van de tekstwolk uit database -->
+                        <div id="output" class="speech-bubble-ds">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+        </form>
+        <!--
         <div class="row justify-content-center">
             <form name="form">
                 <input class="textview" readonly="readonly" name="textview">
@@ -95,7 +139,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </tr>
             </table>
         </div>
-
+    -->
     </div>
 
     <script type="text/javascript" src="js/rekenmachine.js"></script>

@@ -238,3 +238,21 @@ form button {
     font-size: 25px;
     padding: 5px;
 }
+
+#input {
+    margin-top: 2%;
+}
+
+#output {
+    margin-top: 2%;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+#bereken {
+    margin-top: 1%;
+}
+
+#rekengir {
+    width: 80%;
+}
