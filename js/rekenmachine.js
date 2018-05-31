@@ -47,7 +47,7 @@ function berekenBreuk(input) {
     document.getElementById("output").innerHTML = "";
 
     for (var i = 1; i <= eind; i++) {
-        
+        resultaat = 1 / i;
     }
 }
 
@@ -79,6 +79,6 @@ function berekenKwadraat(input) {
 
     for (var i = 1; i <= input; i++) {
         resultaat = i * i;
-        console.log(resultaat);
+        document.getElementById("output").innerHTML += resultaat + "<sup>" + 2 + "</sup>" + " = " + "<br>";
     }
 }
