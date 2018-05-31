@@ -4,7 +4,7 @@ function insert(getal) {
 
 function gelijkAan() {
     var getal = document.form.textview.value;
-    
+
     if (getal) {
         document.form.textview.value = eval(getal);
     }
@@ -16,7 +16,7 @@ function clean() {
 
 function back() {
     var getal = document.form.textview.value;
-    document.form.textview.value = getal.substring(0,getal.length - 1);
+    document.form.textview.value = getal.substring(0, getal.length - 1);
 }
 
 function berekenReeks() {
@@ -24,28 +24,28 @@ function berekenReeks() {
     var eindGetal = parseFloat(document.getElementById("eindGetal").value);
     var reeks = document.getElementById("reeks");
     var reeksInvoer = reeks.options[reeks.selectedIndex].text;
-    
-    if(reeksInvoer == "Breukenreeks"){
-       berekenBreuk(getalInput);
+
+    if (reeksInvoer == "Breukenreeks") {
+        berekenBreuk(getalInput);
     }
-    
-    if(reeksInvoer == "Machtreeks"){
-       berekenMacht(getalInput);
+
+    if (reeksInvoer == "Machtreeks") {
+        berekenMacht(getalInput);
     }
-    
-    if(reeksInvoer == "Tafels"){
-       berekenTafel(getalInput, eindGetal);
+
+    if (reeksInvoer == "Tafels") {
+        berekenTafel(getalInput, eindGetal);
     }
-    
-    if(reeksInvoer == "Kwadratenreeks"){
-       berekenKwadraat(getalInput);
+
+    if (reeksInvoer == "Kwadratenreeks") {
+        berekenKwadraat(getalInput);
     }
 }
 
 function berekenBreuk(input) {
     var resultaat;
-    document.getElementById("output").innerHTML = ""; 
-    
+    document.getElementById("output").innerHTML = "";
+
     for (var i = 1; i <= eind; i++) {
         
     }
@@ -53,17 +53,20 @@ function berekenBreuk(input) {
 
 function berekenMacht(input) {
     var resultaat;
-    document.getElementById("output").innerHTML = ""; 
-    
-    for (var i = 1; i <= eind; i++) {
-        
+    var vorigeUitkomst = 1;
+    document.getElementById("output").innerHTML = "";
+
+    for (var i = 1; i <= 15; i++) {
+        resultaat = vorigeUitkomst * input;
+        vorigeUitkomst = resultaat;
+        document.getElementById("output").innerHTML += input + "<sup>" + i + "</sup>" + " = " + resultaat + "<br>";
     }
 }
 
 function berekenTafel(input, eind) {
     var resultaat;
-    document.getElementById("output").innerHTML = ""; 
-    
+    document.getElementById("output").innerHTML = "";
+
     for (var i = 1; i <= eind; i++) {
         resultaat = input * i;
         document.getElementById("output").innerHTML += i + " x " + input + " = " + resultaat + "<br>";
@@ -72,9 +75,10 @@ function berekenTafel(input, eind) {
 
 function berekenKwadraat(input) {
     var resultaat;
-    document.getElementById("output").innerHTML = ""; 
-    
-    for (var i = 1; i <= eind; i++) {
-        
+    document.getElementById("output").innerHTML = "";
+
+    for (var i = 1; i <= input; i++) {
+        resultaat = i * i;
+        console.log(resultaat);
     }
 }
