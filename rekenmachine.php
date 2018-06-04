@@ -38,24 +38,24 @@ if ($_SESSION['ingelogd'] == "ja"){
                             <a class="nav-link" href="rekenmachine.php">Rekenmachine</a>
                         </li>
                         <li class="dropdown nav-item  active">
-       						 <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Getallenreeks
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Getallenreeks
        							 </a>
-       								 <ul class="dropdown-menu nav-item">
-         								 <li><a href="fibonacci.php">Fibonacci Reeks</a></li>
-                       					 <li><a href="#">Priemgetallen Reeks</a></li>
-                        			 </ul>	
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pittige rekensommen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rad van fortuin</a>
-                        </li>
-                        <li class="nav-item" id="uitloggen">
-                            <a class="nav-link" href="#">Shoot the pig</a>
-                        </li>
-                        <li>
-                            <button class="btn btn-danger" type="button" href="logout.php"><a href="logout.php">Uitloggen</a></button>
-                        </li>
+                            <ul class="dropdown-menu nav-item">
+                                <li><a href="fibonacci.php">Fibonacci Reeks</a></li>
+                                <li><a href="#">Priemgetallen Reeks</a></li>
+                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pittige rekensommen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rad van fortuin</a>
+                            </li>
+                            <li class="nav-item" id="uitloggen">
+                                <a class="nav-link" href="#">Shoot the pig</a>
+                            </li>
+                            <li>
+                                <button class="btn btn-danger" type="button" href="logout.php"><a href="logout.php">Uitloggen</a></button>
+                            </li>
                     </ul>
                 </div>
             </nav>
@@ -103,46 +103,6 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </div>
         </form>
-        <!--
-        <div class="row justify-content-center">
-            <form name="form">
-                <input class="textview" readonly="readonly" name="textview">
-            </form>
-        </div>
-        <div class="row justify-content-center">
-            <table>
-                <tr>
-                    <td><input class="knop" type="button" value="C" onclick="clean()"></td>
-                    <td><input class="knop" type="button" value="<" onclick="back()"></td>
-                    <td><input class="knop" type="button" value="/" onclick="insert('/')"></td>
-                    <td><input class="knop" type="button" value="x" onclick="insert('*')"></td>
-                </tr>
-                <tr>
-                    <td><input class="knop" type="button" value="7" onclick="insert(7)"></td>
-                    <td><input class="knop" type="button" value="8" onclick="insert(8)"></td>
-                    <td><input class="knop" type="button" value="9" onclick="insert(9)"></td>
-                    <td><input class="knop" type="button" value="%" onclick="insert('%')"></td>
-                </tr>
-                <tr>
-                    <td><input class="knop" type="button" value="4" onclick="insert(4)"></td>
-                    <td><input class="knop" type="button" value="5" onclick="insert(5)"></td>
-                    <td><input class="knop" type="button" value="6" onclick="insert(6)"></td>
-                    <td><input class="knop" type="button" value="-" onclick="insert('-')"></td>
-                </tr>
-                <tr>
-                    <td><input class="knop" type="button" value="1" onclick="insert(1)"></td>
-                    <td><input class="knop" type="button" value="2" onclick="insert(2)"></td>
-                    <td><input class="knop" type="button" value="3" onclick="insert(3)"></td>
-                    <td><input class="knop" type="button" value="+" onclick="insert('+')"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input class="knop" style="width: 106px" type="button" value="0" onclick="insert(0)"></td>
-                    <td><input class="knop" type="button" value="." onclick="insert('.')"></td>
-                    <td><input class="knop" type="button" value="=" onclick="gelijkAan()"></td>
-                </tr>
-            </table>
-        </div>
-    -->
     </div>
 
     <script type="text/javascript" src="js/rekenmachine.js"></script>
