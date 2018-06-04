@@ -1,4 +1,3 @@
-
 function berekenPrime(){
 	var n = parseFloat(document.getElementById("getalinput_Prime").value);
 	document.getElementById("bubble").style.display = "block";

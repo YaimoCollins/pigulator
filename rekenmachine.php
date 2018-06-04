@@ -42,7 +42,7 @@ if ($_SESSION['ingelogd'] == "ja"){
        							 </a>
                             <ul class="dropdown-menu nav-item">
                                 <li><a href="fibonacci.php">Fibonacci Reeks</a></li>
-                                <li><a href="#">Priemgetallen Reeks</a></li>
+                                <li><a href="priemgetallen.php">Priemgetallen Reeks</a></li>
                             </ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pittige rekensommen</a>
