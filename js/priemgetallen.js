@@ -1,6 +1,7 @@
 function berekenPrime(){
 	var n = parseFloat(document.getElementById("getalinput_Prime").value);
 	document.getElementById("bubble").style.display = "block";
+	document.getElementById("rekengir").src = "img/crazygir.png";
     
     var array = [], upperLimit = Math.sqrt(n);
 

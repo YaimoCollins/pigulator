@@ -60,7 +60,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                 </div>
             </nav>
         </div>
-        <div class="row justify-content-center" id="bubble">
+        <div class="row justify-content-center" id="bubble1">
             <!-- inhoud van de tekstwolk uit database -->
             <div class="speech-bubble-ds">
                 <p>Hallo! Ik ben gir! <br> Ik ben uw hulpje op deze rekenwebsite.<br> Ik geef u informatie over hoe deze website werkt en daarnaast kan ik ook heel goed rekenen!</p>

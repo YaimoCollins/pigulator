@@ -1,4 +1,4 @@
-<?php require "database/dbconnect.php"; 
+	<?php require "database/dbconnect.php"; 
 session_start();
 if ($_SESSION['ingelogd'] == "ja"){
 

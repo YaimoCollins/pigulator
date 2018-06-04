@@ -68,6 +68,10 @@ ul li {
     font-family: 'VT323', monospace;
 	display: none;
 }
+#bubble1 {
+	margin-top: 5%;
+	font-family: 'VT323', monospace;
+}
 .speech-bubble-ds {
     background: white;
     border: 1px solid #a7a7a7;
