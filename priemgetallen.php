@@ -79,7 +79,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                     <button id="bereken" type="button" class="btn btn-primary" onclick="berekenPrime()">Bereken</button>
                 </form>
             </div>
-            <div class="row">
+            <div class="row rekengir">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-2">
                     <img id="rekengir" src="img/happygir.png" alt="Deze foto werkt niet">
