@@ -33,7 +33,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Presentatie</a>
+                            <a class="nav-link" href="presentatie.php">Presentatie</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="rekenmachine.php">Rekenmachine</a>

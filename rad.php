@@ -4,6 +4,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -25,10 +26,9 @@ if ($_SESSION['ingelogd'] == "ja"){
                 <button id="navknop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -61,43 +61,29 @@ if ($_SESSION['ingelogd'] == "ja"){
             </nav>
         </div>
 
-        <form>
-            <div id="input" class="row">
-                <div class="col-lg-4">
+        <div class="container" style="margin-top:100px;">
+            <table class="table text-center">
+                <tr>
+                    <td colspan="2"><input id="btnSpinIt" type="submit" value="Spin It" class="input-sm form-control btn-success" onclick="SpinIt()"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="pointer"></div>
+                        <div id="rad" class="text-center"></div>
+                    </td>
+                    <td>
+                        <div class="pointer"></div>
+                        <div class="text-center">RAD 2</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="ipNumberRad1" type="text" class="input-sm form-control"></td>
+                    <td><input id="ipNumberRad2" type="text" class="input-sm form-control"></td>
+                </tr>
+            </table>
+        </div>
 
-                </div>
-
-                <div class="col-lg-4">
-                    <input id="getalinput_Prime" type="text" class="form-control" placeholder="Tot en met welk priemgetal wil je zien?">
-                </div>
-
-                <div class="col-lg-4">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <form name="form">
-                    <button id="bereken" type="button" class="btn btn-primary" onclick="berekenPrime()">Bereken</button>
-                </form>
-            </div>
-            <div class="row rekengir">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-2">
-                    <img id="rekengir" src="img/happygir.png" alt="Deze foto werkt niet">
-                </div>
-
-                <div class="col-lg-2">
-                    <div class="row justify-content-center" id="bubble">
-                        <!-- inhoud van de tekstwolk uit database -->
-                        <div id="prime_Output" class="speech-bubble-ds">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                </div>
-            </div>
-        </form>
-
-        <script type="text/javascript" src="js/priemgetallen.js"></script>
+        <script type="text/javascript" src="js/rad.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -105,6 +91,7 @@ if ($_SESSION['ingelogd'] == "ja"){
 </body>
 
 </html>
+
 <?php }
 
 else {
