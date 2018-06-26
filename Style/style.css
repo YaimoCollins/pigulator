@@ -306,6 +306,13 @@ form button {
 	background-size: contain;
 	margin: 0 auto;
 }
+#rad2 {
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/rad_6.gif');
+	background-size: contain;
+	margin: 0 auto;
+}
 
 #btnClearIt {
 	display: none;
