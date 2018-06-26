@@ -73,7 +73,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                     </td>
                     <td>
                         <div class="pointer"></div>
-                        <div class="text-center">RAD 2</div>
+                        <div id="rad2" class="text-center"></div>
                     </td>
                 </tr>
                 <tr>
