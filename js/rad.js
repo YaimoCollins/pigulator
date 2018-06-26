@@ -74,6 +74,8 @@ function getNumber1(x) {
 	addNumber(number2);
 }
 
-function addNumber() {
+function addNumber(number1, number2) {
+	var endNumber = number1 + number2;
+	alert(endNumber);
 	
 }
