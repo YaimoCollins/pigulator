@@ -1,5 +1,6 @@
 ﻿var rotation, time;
 var rotation1, time1;
+var getallen = [];
 //Function 'getRandom', maakt een Random getal aantal waarvan de waarde tussen parameter min en max ligt.
 //vb: als min=5 en max=10, dan krijg je een random getal terug waarvan de waarde een 5,6,7,8 of 9 is.
 function getRandom(min, max) {
@@ -25,6 +26,11 @@ function SpinIt() {
     setTimeout(function () { getNumber(rotation); }, (time * 1000));
 	setTimeout(function () { getNumber1(rotation1); }, (time1 * 1000));
     
+    if (time <= time1) {
+        setTimeout(function () { addNumber(); }, (time1 * 1000));
+    } else if (time1 <= time) {
+        setTimeout(function () { addNumber(); }, (time * 1000));
+    }
 }
 
 function getNumber(x) {
@@ -47,7 +53,7 @@ function getNumber(x) {
         document.getElementById('ipNumberRad1').value = "1";
     }
     var number1 = document.getElementById('ipNumberRad1').value;
-	addNumber(number1);
+	getallen.push(number1);
 }
 	
 
@@ -71,9 +77,10 @@ function getNumber1(x) {
         document.getElementById('ipNumberRad2').value = "1";
     }
 	var number2 = document.getElementById('ipNumberRad2').value;
-	addNumber(number2);
+	getallen.push(number2);
 }
 
 function addNumber() {
-	
+    var uitkomst = parseInt(getallen[0]) + parseInt(getallen[1]);
+    alert(uitkomst);
 }
