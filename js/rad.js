@@ -11,7 +11,7 @@ function SpinIt() {
     //rotation krijgt een random waarde toegewezen die tussen 800 en 2000 ligt.
     rotation = getRandom(800, 2000);
 	rotation1 = getRandom(800,2000);
-    //time krijgt een random waarde toegewezen die tussen 5 en 10 ligt.
+    //time krijgt een random waarde toegewezen die tussen 	5 en 10 ligt.
     time = getRandom(5, 10);
 	time1 = getRandom(5, 10);
     //Het rad moet aantal graden draaien, deze waarde wordt aan het rad toegekend d.m.v variabele rotation
@@ -28,9 +28,12 @@ function SpinIt() {
     
     if (time <= time1) {
         setTimeout(function () { addNumber(); }, (time1 * 1000));
+		clearInterval();
     } else if (time1 <= time) {
         setTimeout(function () { addNumber(); }, (time * 1000));
+		clearInterval();
     }
+	
 }
 
 function getNumber(x) {
@@ -82,6 +85,7 @@ function getNumber1(x) {
 
 function addNumber() {
     var uitkomst = parseInt(getallen[0]) + parseInt(getallen[1]);
-    alert(uitkomst);
-
+   	document.getElementById('prime_Output').innerHTML = uitkomst;
+	document.getElementById('bubble').style.display = 'block';
+	document.getElementById("rekengir").src = "img/crazygir.png";
 }
