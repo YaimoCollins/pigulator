@@ -48,7 +48,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                                 <a class="nav-link" href="#">Pittige rekensommen</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rad van fortuin</a>
+                                <a class="nav-link" href="rad.php">Rad van fortuin</a>
                             </li>
                             <li class="nav-item" id="uitloggen">
                                 <a class="nav-link" href="#">Shoot the pig</a>
