@@ -49,7 +49,7 @@ if ($_SESSION['ingelogd'] == "ja"){
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="rad.php">Rad van fortuin</a>
-                        </li>
+                        </li>s
                         <li class="nav-item" id="uitloggen">
                             <a class="nav-link" href="#">Shoot the pig</a>
                         </li>

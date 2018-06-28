@@ -83,5 +83,4 @@ function getNumber1(x) {
 function addNumber() {
     var uitkomst = parseInt(getallen[0]) + parseInt(getallen[1]);
     alert(uitkomst);
-
 }
